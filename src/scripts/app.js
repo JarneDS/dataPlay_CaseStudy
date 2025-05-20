@@ -78,21 +78,6 @@ function closeSousMenu() {
   }
 }
 
-
-// utilisation de copilot + modif personnels pour cette partie
-document.addEventListener('DOMContentLoaded', () => {
-    const slices = document.querySelectorAll('.slice');
-    const data = [30, 45, 25]; // Les valeurs des portions
-    const colors = ['#f44336', '#2196F3', '#4CAF50']; // Les couleurs des portions
-
-    slices.forEach((slice, index) => {
-        slice.style.setProperty('--offset', data.slice(0, index).reduce((acc, val) => acc + val, 0));
-        slice.style.setProperty('--value', data[index]);
-        slice.style.setProperty('--color', colors[index]);
-    });
-});
-
-
 document.querySelector('.scroll').addEventListener('click', function() {
   // Trouver le premier élément <h2>
   const firstH2 = document.querySelector('h2');
@@ -119,3 +104,13 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 1.0 });
 
 sections.forEach(section => observer.observe(section));
+
+/* Back to top */
+
+var backToTopButton = document.querySelector(".btt");
+
+backToTopButton.addEventListener("click", backToTop);
+
+function backToTop(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}

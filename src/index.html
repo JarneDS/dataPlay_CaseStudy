@@ -57,126 +57,65 @@
       <p>Scroll&nbsp;vers&nbsp;le&nbsp;bas</p>
     </div>
   </section>
-  <h2>Case Study</h2>
-  <section class="miseEnPageCase--grid">
+  <section id="contexte" class="miseEnPageCase--grid">
+    <h2>Contexte</h2>
     <img src="assets/images/logo-dwt_noir.webp" alt="logo option Design Web HEAJ">
-    <p><span>Dans le cadre de notre projet Project Rethinking UX, organisé par l&#39;option DWT, nous avons dû mettre en place un dispositif d&#39;aménagement d&#39;un local dédié aux étudiants de l&#39;HEAJ, pour répondre à leurs besoins et à leurs envies. L&#39;objectif de ce projet est de tester une démarche de design UX appliquée à un espace&nbsp;physique.</span></p>
+    <p><span>Notre groupe, composé de Nicolas Lefebvre, Théo Colpaert, Andrea Romeo Vasquez et moi-même, a créé <strong>un site internet visant à montrer et exploiter des données sur un sujet choisi librement et à les présenter de manière interactive</strong>, ce projet était nommé «DataPlay».</span> <span>Après avoir exploré plusieurs pistes, telles que : une étude des toiles d'araignées, ou, sur les zones géographiques les plus soumises aux intempéries. Mais au final, analyser des accidents aériens s’est révélé comme le sujet le plus captivant et réalisable. Après de longues recherches en ligne, j’ai découvert un fichier JSON reprenant la majorité des accidents aériens survenus entre 1908 et 2022. Ce fichier volumineux contient des données telles que le nombre de passagers à bord, le nombre de victimes, le type d’avions, ainsi que les causes des accidents. Cette ressource a servi de base pour développer notre projet.</span> <span>Dans un premier temps, nous avons envisagé de créer une carte interactive sur laquelle seraient localisés les points de crash. En cliquant sur un point, l'utilisateur aurait pu accéder aux informations relatives au vol concerné. Cependant, après en avoir discuté avec nos professeurs, ceux-ci nous ont fait remarquer que cette approche manquait d’interactivité pour un visiteur lambda et risquait de ne pas suffisamment capter son attention.</span> <span>Suite à ces remarques, nous avons repensé notre concept. Nous avons alors eu l’idée de proposer une interface permettant à l’utilisateur de filtrer les accidents en sélectionnant différents critères : le constructeur de l’avion, le modèle, la compagnie aérienne ainsi que la date de l’accident. Une fois ces éléments choisis, les données relatives à l’événement s’affichent dynamiquement.</span> <span>Pour enrichir davantage l’expérience et la rendre plus visuelle, Théo a réalisé les silhouettes des différents modèles d’avion retenus. Cette initiative permet notamment aux visiteurs non spécialistes de se représenter plus concrètement à quoi ressemblait l'appareil impliqué dans l’accident.</span></p>
   </section>
-  <section id="avant-propos" class="miseEnPage__avant-propos--grid">
-    <h2>Avant-propos</h2>
+  <section id="donnees" class="miseEnPage__avant-propos--grid">
+    <h2>La sélection des données</h2>
     <img src="assets/images/avantPropos.webp" srcset="assets/images/avantPropos@2x.webp 2x" alt="Alyssa et Danica qui travaillent">
     <p>
-      <span>Dès l&#39;annonce du projet, c&#39;était la panique ! Mais pas de panique (enfin, plus   maintenant), on a respiré un grand coup.</span> <span>À peine avions-nous rendu notre précédent projet qu&#39;on nous replongeait tête la première dans l&#39;aventure. Nos angoisses sont restées fidèles au poste : le code, toujours lui.</span> <span>Alors, pas le temps de tergiverser, on a retroussé nos manches et on s&#39;est mis au&nbsp;travail…</span>
+      <span>Le fichier JSON initial, avec plus de 700 000 lignes de codes, était bien trop volumineux pour être exploité directement sur un site web. Pour réduire sa taille, avec l’accord du groupe, Théo et moi avons effectué une première sélection, <strong>nous avons éliminé les données incomplètes ainsi que celles relatives aux accidents impliquant des avions militaires ou gouvernementaux.</strong> Ce tri nous a permis d'alléger significativement le fichier, le rendant exploitable pour la suite.</span> <span>Théo a ensuite affiné davantage le fichier en se concentrant sur une sélection de constructeurs et modèles spécifiques.</span>
     </p>
   </section>
-  <h2 class="deroulement" id="deroulement">Déroulement du&nbsp;projet</h2>
-  <section id="reflexion" class="miseEnPage--grid">
-    <h3>Phase de&nbsp;réflexion</h3>
+  <section id="etapes" class="miseEnPage--grid">
+    <h2>Les étapes parallèles</h2>
     <img src="assets/images/reflexion.webp" srcset="assets/images/reflexion@2x.webp 2x" alt="Le groupe (Danica, Alyssa, Noa, Jarne et Elodie) qui travaillent">
-    <p><span>Étant nous-mêmes élèves à l&#39;HEAJ, une grande question existentielle s'est imposée : qu'aimerions-nous vraiment voir dans ce local ? Réponse unanime, un besoin de confort et de la praticité ! Avant même d'envisager l'aspect décoratif, nous avons donc réfléchi à son aspect fonctionnel : des sofas, des prises, des boîtes à livres, et des affiches mettant en avant les options de&nbsp;l'école.</span></p>
+    <p><span>Tandis que Théo et moi travaillaient sur le traitement des données du fichier JSON, <strong>Nicolas et Andrea se sont concentrés sur la conception du site.</strong> Un premier prototype, réalisé avec Figma, nous a permis de présenter un premier prototype en noir et blanc aux enseignants. Nicolas a ensuite décidé de refaire une version de la maquette en couleurs avec plus de détails, ce qui nous a permis d’avoir une vision plus claire du rendu final.</span></p>
   </section>
   <section id="enquete" class="miseEnPage--grid">
-    <h3>Enquête&nbsp;de terrain</h3>
+    <h2>Le développement du site</h2>
     <div>
       <img src="assets/images/terrain1.webp" srcset="assets/images/terrain1@2x.webp 2x" alt="image de la porte avant modifications">
       <img src="assets/images/terrain2.webp" srcset="assets/images/terrain2@2x.webp 2x" alt="le couloir avec la porte en question">
     </div>
     <p>
-      <span>Suite à notre profonde réflexion, deux questionnaires ont été mis en place.</span> <span>D&#39;abord, un questionnaire qualitatif qui vise à explorer les perceptions, opinions et motivations des étudiants via des questions ouvertes. L'idée était de récolter un maximum d'idées d'aménagement (parce que la démocratie, c'est cool aussi).</span> <span>Ensuite, un questionnaire quantitatif qui propose des questions fermées, des échelles de notation et des choix multiples pour obtenir des résultats exploitables et précis. Cela facilite à cibler les besoins des étudiants et ainsi éviter de partir dans tous les&nbsp;sens.</span> <span>En réponse à nôtre premier questionnaire, le plus gros problème avant l&#39;aménagement du local, est que la plupart des étudiants ignoraient même l&#39;existence de celui-ci. Niveau communication, zéro… Les suggestions ont alors fusé, des annonces par mail, des messages sur Discord, des affiches bien visibles… En somme, il faut faire du bruit autour de ce local.</span> <span>Dans le deuxième questionnaire, on a alors accordé une attention particulière à ce problème, afin de déterminer la meilleure solution. Ce qui revient le plus, c&#39;est une accroche visuelle marquante : des affiches, des décorations tape-à-l&#39;œil… En conclusion, le local a besoin d&#39;un coup de boost pour être plus qu&#39;une légende urbaine et devienne un vrai repère pour les&nbsp;étudiants&nbsp;!</span>
+      <span>Avec la validation du design, d'abord par le groupe puis par les professeurs, nous avons commencé à coder le site internet à l’aide de Visual Studio Code. Les tâches ont été réparties selon les compétences de chacun :</span>
+      <ul>
+        <li><strong>Andrea : </strong>Conception des animations, notamment l'apparition du nom du projet lors du chargement de la page, il a visé à garantir une fluidité et une harmonie visuelle entre les différents éléments et les pages ;</li>
+        <li><strong>Nicolas : </strong>Le dirigeant du projet, le design global et la mise en page du contenu ;</li>
+        <li><strong>Théo : </strong>Coordination du projet et intégration du JSON à l’aide de JavaScript ;</li>
+        <li><strong>Moi : </strong>Intégration du JSON à l’aide de JavaScript ainsi que la correction du SCSS pour que les éléments s’affichent correctement sur la page.</li>
+      </ul>
+      <span>Pour éviter les chevauchements, nous avons utilisé le logiciel GitHub. Chaque membre travaillait sur une branche distincte et, une fois leur partie finalisée, elle était intégrée dans le “master” après la validation par chaque membre du groupe. Cette méthode a fortement réduit les risques de conflits et nous a permis de gagner beaucoup de temps.</span>
     </p>
   </section>
-  <section id="analyse" class="miseEnPage--grid">
-    <h3>Analyse</h3>
-    <!--Copilot utiliser pour créer un graphique rond pour représenter les chiffres-->
-    <section class="graphiques">
-      <section class="graphiques_bg">
-        <article class="pie-chart2">
-            <figure class="slice" style="--offset: 0; --value: 30; --color: #f44336;"></figure>
-            <figure class="slice" style="--offset: 30; --value: 45; --color: #2196F3;"></figure>
-        </article>
-        <aside>
-            <div class="blockbl"></div>
-            <div class="blockor"></div>
-        </aside>
-        <div>
-            <p><strong>77.1%</strong></p>
-            <p><strong>22.9%</strong></p>
-        </div>
-    </section>
-    
-    <section class="graphiques_bg">
-        <article class="pie-chart">
-            <figure class="slice" style="--offset: 0; --value: 30; --color: #f44336;"></figure>
-            <figure class="slice" style="--offset: 30; --value: 45; --color: #2196F3;"></figure>
-            <figure class="slice" style="--offset: 75; --value: 25; --color: #4CAF50;"></figure>
-        </article>
-        <aside>
-            <div class="blockbl"></div>
-            <div class="blockor"></div>
-            <div class="blockja"></div>
-        </aside>
-        <div>
-            <p><strong>70.8%</strong></p>
-            <p><strong>20.8%</strong></p>
-            <p><strong>8.4%</strong></p>
-        </div>
-    </section>
-    
-    </section>
-    <p>
-      <span>Parlons peu, parlons chiffres. Une fois les réponses des étudiants collectées, nous les avons confrontées aux analyses de toute la classe afin d'affiner nos conclusions. Spoiler alerte : tout le monde était d'accord.</span> <span>Les analyses ont démontré que <strong>77.1%</strong> des étudiants contre <strong>22.9%</strong> ont voté pour une salle de repos.</span> <span>Que <strong>60%</strong> des étudiants n&#39;avaient jamais entendu parler du local et <strong>100%</strong> jugeaient la communication autour de celui-ci était inefficace.</span> <span>Lors de solutions suggérées pour augmenter la visibilité du local, <strong>70.8%</strong> des étudiants ont voté pour une fresque, <strong>20.8%</strong> pour des affiches et <strong>8.4%</strong> pour un panneau&nbsp;indicatif.</span>
-    </p>
-  </section>
-  <section id="probleme" class="miseEnPage--grid">
-    <h3>Réponse au&nbsp;problème</h3>
-    <p>
-      <span>Chaque groupe s'est occupé de résoudre un problème majeur. Nous avons choisi de rendre le local attractif en misant sur l'élément central, sa porte.</span> <span>Puisque la plupart des étudiants ignorent que le local existe, il faut attirer leur attention avec une porte qui interpelle, intrigue et surtout, qui donne envie&nbsp;d&#39;entrer&nbsp;!</span>
-    </p>
-  </section>
-  <section id="concept" class="miseEnPageConcept--grid">
-    <h3>Concept du&nbsp;projet</h3>
-    <p>
-      <span>Le projet est donc lancé : réalisation d&#39;une fresque sur les portes intérieures et extérieures du local.</span> <span>Pour l&#39;organisation, on mise sur le volontariat. Le projet est présenté aux étudiants, et ceux qui veulent mettre la main à la pâte se proposent. Ensuite, un sondage sera partagé avec les designs soumis par les étudiants et celui qui obtient le plus de votes sera&nbsp;réalisé.</span>
-      <span>L&#39;avantage est que cela réduit les coûts liés à la main-d&#39;œuvre. C&#39;est une super opportunité pour les étudiants, ils participent à un projet qui les concerne directement, ça peut même booster leur portfolio et surtout, c&#39;est une chouette expérience. Tout le monde y gagne ! Qui sait, on va peut-être même créer une nouvelle&nbsp;tradition&nbsp;?</span>
-    </p>
+  <section id="defis" class="miseEnPage--grid">
+    <h2>Défis rencontrés</h2>
     <div>
-      <img src="assets/images/projet1.webp" srcset="assets/images/projet1@2x.webp 2x" alt="image de la porte de l'autre coté du couloir">
-      <img src="assets/images/projet2.webp" srcset="assets/images/projet2@2x.webp 2x" alt="MockUp de la porte avec un dessin créer par Elodie">
+      <img src="assets/images/terrain1.webp" srcset="assets/images/terrain1@2x.webp 2x" alt="image de la porte avant modifications">
+      <img src="assets/images/terrain2.webp" srcset="assets/images/terrain2@2x.webp 2x" alt="le couloir avec la porte en question">
     </div>
-  </section>
-  <section id="mise_en_place" class="miseEnPage--grid">
-    <h3>Mise en place du&nbsp;projet</h3>
-    <img src="assets/images/peinture.webp" srcset="assets/images/peinture@2x.webp 2x" alt="Mur rempli d'outils de peinture et de dessin">
     <p>
-      <span>Au niveau du matériel, nous avons énuméré la liste. Premièrement, des pinceaux et de la peinture. Deuxièmement, des protections de sols et du scotch délimitant.</span> <span>Afin de minimiser le budget, il a fallu comparer les différentes enseignes et leurs rapports produit-prix.</span> <span>En ce qui concerne les autorisations et les budgets, une demande a été introduite auprès de la direction de l&#39;école afin d&#39;obtenir les feux verts et réfléchir à l&#39;éventuelle possibilité d&#39;un&nbsp;financement.</span>
+      <span><strong>Notre projet ne sait pas déroulé comme sur des roulettes.</strong> Nous avons par exemple eu à faire à :</span>
     </p>
+    <ol>
+      <li>des disponibilités réduites pendant une semaine de vacances en plein milieu du projet, en raison des emplois étudiants de certains membres ;</li>
+      <li>des conflits GitHub lors de l'intégration des branches, qui ont nécessité du temps précieux pour être résolus ;</li>
+      <li>d’autres travaux en cours, durant le début du projet on avait encore d’autres projets à rendre notamment le projet PRUX, ce qui nous a temporairement ralenti sur le projet DataPlay.</li>
+    </ol>
   </section>
-  <section id="conception" class="miseEnPageConception--grid">
-    <h3>Conception&nbsp;du&nbsp;design</h3>
-    <div class="img--gauche">
-      <img src="assets/images/design1.webp" srcset="assets/images/design1@2x.webp 2x" alt="inspiration d'un dessin mural féminin">
-      <img src="assets/images/design2.webp" srcset="assets/images/design2@2x.webp 2x" alt="MockUp de la porte avec un dessin créer par Elodie et Noa">
-    </div>
+  <section id="bilan" class="miseEnPage--grid">
+    <h2>Bilan</h2>
     <p>
-      <span>Pour évaluer la faisabilité du projet, un retour sur place a été nécessaire dans le but de prendre des photos du local et de sa porte. Ensuite, direction Photoshop ! On a intégré un design trouvé sur internet pour visualiser le rendu&nbsp;potentiel.</span>
-      <span>Puis, place à la création. Notre objectif est de représenter tous les étudiants. Pour ce faire, on a imaginé deux personas en style cartoon, chacun reflétant des caractéristiques des différentes options de l&#39;école.</span> <span>On a aussi joué sur des éléments visuels forts, qu&#39;on a repris sur la face intérieure de la porte pour éviter la surcharge&nbsp;d&#39;informations.</span>
-    </p>
-    <div class="img--droite">
-      <img src="assets/images/design3.webp" srcset="assets/images/design3@2x.webp 2x" alt="inspiration d'un dessin mural de formes">
-      <img src="assets/images/design4.webp" srcset="assets/images/design4@2x.webp 2x" alt="MockUp de la porte avec un dessin créer par Noa">
-    </div>
-  </section>
-  <section id="code" class="miseEnPage__code--grid">
-    <h3>Le code</h3>
-    <img src="assets/images/mockupCode.png" alt="MockUp Ordinateur Portable de VS Code avec le code du projet">
-    <p>
-      <span>Chaque membre du groupe a dû concevoir son propre code afin de développer une interface correspondant au thème du projet.</span> <span>Ce processus s’est révélé complexe, notamment en raison du choix des couleurs inspirées des fresques, qui devaient s’harmoniser dans l’ensemble du site.</span> <span>Pour cela, l'utilisation de nombreuses inspirations pour voir la compatibilité de chaque couleur, ainsi que l'utilisation de <a class="colorable" href="https://colorable.jxnblk.com/" target="_blank">Colorable</a> ont été de grande importance.</span> <span>Pour la version desktop, l’utilisation du mode grid s’est avérée être la solution la plus efficace pour disposer les éléments aux emplacements souhaités sur la page.</span>
+      <span>Ce projet nous a permis de <strong>développer nos compétences en manipulation et visualisation de données JSON</strong>, ainsi que dans la conception d’un site internet interactif. Nous avons aussi appris à utiliser GitHub durant ce projet.</span>
     </p>
   </section>
   <footer class="footer-container">
     <button class="btt">></button>
     <section class="section--footer">
-      <p><strong>Project Rethinking UX</strong></p>
+      <p><strong>Case Study Dataplay</strong></p>
       <p>Editor : &#169; Jarne De Scheerder 2024-2025</p>
     </section>
     <a class="heaj" href="https://www.heaj.be/" target="_blank"><img src="assets/images/logosquarred_HEAJ-white.webp" alt="logo de la HEAJ"></a>
