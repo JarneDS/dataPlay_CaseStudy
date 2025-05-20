@@ -281,6 +281,7 @@ p {
 }
 
 span {
+    display: block;
     margin: 12px 0;
     margin-bottom: 27px;
     width: 80%;
@@ -488,6 +489,10 @@ content: "";
 
     .menu a {
         font-size: clamp(0.938rem, 0.926vw + 0.764rem, 1.875rem);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 
     .rotatable {
