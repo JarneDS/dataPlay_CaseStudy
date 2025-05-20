@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>PRUX-Case Study</title>
+  <title>Dataplay-Case Study</title>
 
   <meta name="description" content="">
   <meta charset="UTF-8">
@@ -10,12 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
-  <meta property="og:site_name" content="PRUX projet">
-  <meta property="og:title" content="Project Rethinking UX">
-  <meta property="og:description" content="Comment rendre une pièce plus attractive">
+  <meta property="og:site_name" content="Dataplay projet">
+  <meta property="og:title" content="Dataplay">
+  <meta property="og:description" content="Site interactive sur les crashs d'avions de 2012 à 2022">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
-  <meta property="og:image" content="http://example.com/assets/images/image.jpg">
+  <meta property="og:image" content="http://example.com/assets/images/image.webp">
   <meta property="og:image:width" content="1800">
   <meta property="og:image:height" content="945">
 
@@ -47,7 +47,7 @@
     </ul>
   </nav>
   <section class="banniere">
-    <img class="banniereimg" src="assets/images/banniere.webp" srcset="assets/images/banniere@2x.webp 2x" alt="bannière représentant la salle avant les travaux">
+    <img class="banniereimg" src="assets/images/banniere.webp" srcset="assets/images/banniere@2x.webp 2x" alt="bannière représentant la page d'acceuil du site Dataplay">
     <h1>Dataplay</h1>
     <div class="scroll">
       <svg class="jump" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -59,27 +59,27 @@
   </section>
   <section id="contexte" class="miseEnPageCase--grid">
     <h2>Contexte</h2>
-    <img src="assets/images/logo-dwt_noir.webp" alt="logo option Design Web HEAJ">
+    <div>
+      <img src="assets/images/photogroupe.webp" srcset="assets/images/photogroupe@2x.webp 2x" alt="photo de groupe">
+      <img src="" srcset=" 2x" alt="">
+    </div>
     <p><span>Notre groupe, composé de Nicolas Lefebvre, Théo Colpaert, Andrea Romeo Vasquez et moi-même, a créé <strong>un site internet visant à montrer et exploiter des données sur un sujet choisi librement et à les présenter de manière interactive</strong>, ce projet était nommé «DataPlay».</span> <span>Après avoir exploré plusieurs pistes, telles que : une étude des toiles d'araignées, ou, sur les zones géographiques les plus soumises aux intempéries. Mais au final, analyser des accidents aériens s’est révélé comme le sujet le plus captivant et réalisable. Après de longues recherches en ligne, j’ai découvert un fichier JSON reprenant la majorité des accidents aériens survenus entre 1908 et 2022. Ce fichier volumineux contient des données telles que le nombre de passagers à bord, le nombre de victimes, le type d’avions, ainsi que les causes des accidents. Cette ressource a servi de base pour développer notre projet.</span> <span>Dans un premier temps, nous avons envisagé de créer une carte interactive sur laquelle seraient localisés les points de crash. En cliquant sur un point, l'utilisateur aurait pu accéder aux informations relatives au vol concerné. Cependant, après en avoir discuté avec nos professeurs, ceux-ci nous ont fait remarquer que cette approche manquait d’interactivité pour un visiteur lambda et risquait de ne pas suffisamment capter son attention.</span> <span>Suite à ces remarques, nous avons repensé notre concept. Nous avons alors eu l’idée de proposer une interface permettant à l’utilisateur de filtrer les accidents en sélectionnant différents critères : le constructeur de l’avion, le modèle, la compagnie aérienne ainsi que la date de l’accident. Une fois ces éléments choisis, les données relatives à l’événement s’affichent dynamiquement.</span> <span>Pour enrichir davantage l’expérience et la rendre plus visuelle, Théo a réalisé les silhouettes des différents modèles d’avion retenus. Cette initiative permet notamment aux visiteurs non spécialistes de se représenter plus concrètement à quoi ressemblait l'appareil impliqué dans l’accident.</span></p>
   </section>
   <section id="donnees" class="miseEnPage__avant-propos--grid">
     <h2>La sélection des données</h2>
-    <img src="assets/images/avantPropos.webp" srcset="assets/images/avantPropos@2x.webp 2x" alt="Alyssa et Danica qui travaillent">
+    <img src="assets/images/omg.webp" srcset="assets/images/omg@2x.webp 2x" alt="Image du fichier JSON avant que nous réduisons sa taille">
     <p>
       <span>Le fichier JSON initial, avec plus de 700 000 lignes de codes, était bien trop volumineux pour être exploité directement sur un site web. Pour réduire sa taille, avec l’accord du groupe, Théo et moi avons effectué une première sélection, <strong>nous avons éliminé les données incomplètes ainsi que celles relatives aux accidents impliquant des avions militaires ou gouvernementaux.</strong> Ce tri nous a permis d'alléger significativement le fichier, le rendant exploitable pour la suite.</span> <span>Théo a ensuite affiné davantage le fichier en se concentrant sur une sélection de constructeurs et modèles spécifiques.</span>
     </p>
   </section>
   <section id="etapes" class="miseEnPage--grid">
     <h2>Les étapes parallèles</h2>
-    <img src="assets/images/reflexion.webp" srcset="assets/images/reflexion@2x.webp 2x" alt="Le groupe (Danica, Alyssa, Noa, Jarne et Elodie) qui travaillent">
+    <img src="assets/images/protosite.webp" srcset="assets/images/protosite@2x.webp 2x" alt="Image du site internet d'abord dessiné à la main sur une feuille">
     <p><span>Tandis que Théo et moi travaillaient sur le traitement des données du fichier JSON, <strong>Nicolas et Andrea se sont concentrés sur la conception du site.</strong> Un premier prototype, réalisé avec Figma, nous a permis de présenter un premier prototype en noir et blanc aux enseignants. Nicolas a ensuite décidé de refaire une version de la maquette en couleurs avec plus de détails, ce qui nous a permis d’avoir une vision plus claire du rendu final.</span></p>
   </section>
   <section id="enquete" class="miseEnPage--grid">
     <h2>Le développement du site</h2>
-    <div>
-      <img src="assets/images/terrain1.webp" srcset="assets/images/terrain1@2x.webp 2x" alt="image de la porte avant modifications">
-      <img src="assets/images/terrain2.webp" srcset="assets/images/terrain2@2x.webp 2x" alt="le couloir avec la porte en question">
-    </div>
+    <img src="assets/images/mockupCode.png" alt="mockup du code de Dataplay">
     <p>
       <span>Avec la validation du design, d'abord par le groupe puis par les professeurs, nous avons commencé à coder le site internet à l’aide de Visual Studio Code. Les tâches ont été réparties selon les compétences de chacun :</span>
     </p>
@@ -95,10 +95,6 @@
   </section>
   <section id="defis" class="miseEnPage--grid">
     <h2>Défis rencontrés</h2>
-    <div>
-      <img src="assets/images/terrain1.webp" srcset="assets/images/terrain1@2x.webp 2x" alt="image de la porte avant modifications">
-      <img src="assets/images/terrain2.webp" srcset="assets/images/terrain2@2x.webp 2x" alt="le couloir avec la porte en question">
-    </div>
     <p>
       <span><strong>Notre projet ne sait pas déroulé comme sur des roulettes.</strong> Nous avons par exemple eu à faire à :</span>
     </p>
@@ -108,6 +104,23 @@
       <li>d’autres travaux en cours, durant le début du projet on avait encore d’autres projets à rendre notamment le projet PRUX, ce qui nous a temporairement ralenti sur le projet DataPlay.</li>
     </ol>
   </section>
+  <div class="imgdefile">
+    <div class="imgdefile__inner">
+      <img class="defile" src="assets/images/410.webp" alt="Illustration faite par Théo représentant un Let L-410">
+      <img class="defile" src="assets/images/560.webp" alt="Illustration faite par Théo représentant un Cessna Citation 560">
+      <img class="defile" src="assets/images/737.webp" alt="Illustration faite par Théo représentant un Boeing 737">
+      <img class="defile" src="assets/images/90KA.webp" alt="Illustration faite par Théo représentant un Beechcraft 90 King Air">
+      <img class="defile" src="assets/images/a320.webp" alt="Illustration faite par Théo représentant un Airbus A320">
+      <img class="defile" src="assets/images/MD83.webp" alt="Illustration faite par Théo représentant un McDonnell Douglas MD-83">
+      <!--Duplication des images-->
+      <img class="defile" src="assets/images/410.webp" alt="Illustration faite par Théo représentant un Let L-410">
+      <img class="defile" src="assets/images/560.webp" alt="Illustration faite par Théo représentant un Cessna Citation 560">
+      <img class="defile" src="assets/images/737.webp" alt="Illustration faite par Théo représentant un Boeing 737">
+      <img class="defile" src="assets/images/90KA.webp" alt="Illustration faite par Théo représentant un Beechcraft 90 King Air">
+      <img class="defile" src="assets/images/a320.webp" alt="Illustration faite par Théo représentant un Airbus A320">
+      <img class="defile" src="assets/images/MD83.webp" alt="Illustration faite par Théo représentant un McDonnell Douglas MD-83">
+    </div>
+  </div>
   <section id="bilan" class="miseEnPage--grid">
     <h2>Bilan</h2>
     <p>
