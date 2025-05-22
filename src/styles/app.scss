@@ -26,7 +26,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#avant-propos, #deroulement, #reflexion, #enquete, #analyse, #probleme, #concept, #mise_en_place, #conception, #code{
+#contexte, #donnees, #etapes, #enquete, #defis, #bilan{
     padding-top: 90px;
 }
 
@@ -35,7 +35,6 @@ body {
     background-color: var(--color-bg);
     line-height: 1.5;
     font-weight: 400;
-    height: 3500px;
     margin: 0;
     padding: 0;
     font-size: clamp(1rem, 0.247vw + 0.954rem, 1.25rem);
@@ -264,16 +263,12 @@ img{
 
 h2 {
     font-size: clamp(2.813rem, 0.617vw + 2.697rem, 3.438rem);
-    margin: 50px 27px 32px;
+    margin: 0px 27px 32px;
 }
 
 h3 {
     font-size: clamp(1.875rem, 0.617vw + 1.759rem, 2.5rem);
-    margin: 50px 27px 26px;
-}
-
-.deroulement {
-    margin: 50px 3% 32px;
+    margin: 0px 27px 26px;
 }
 
 p {
@@ -284,7 +279,7 @@ span {
     display: block;
     margin: 12px 0;
     margin-bottom: 27px;
-    width: 80%;
+    width: 100%;
 }
 
 /* Footer */
@@ -370,6 +365,7 @@ footer p {
 .imgdefile__inner{
     display: flex; 
     animation: imgdefile 25s linear infinite;
+    gap: 5px;
 }
 
 @keyframes imgdefile { 
@@ -379,6 +375,10 @@ footer p {
     100% {
         transform: translateX(0%); 
     }
+}
+
+ul, ol {
+    padding: 28px;
 }
   
 
@@ -485,6 +485,10 @@ footer p {
         margin-left: 120px;
     }
 
+    ul, ol {
+        padding: 0 28px;
+    }
+
     .menu{
         height: 100px;
         display: flex;
@@ -538,231 +542,112 @@ footer p {
         transform: translateX(-50%);
     }
 
-    .deroulement {
-        margin: 208px 120px 0;
-    }
-
     img {
         width: 450px;
         display: block;
         margin: 10px 0 27px;
     }
 
-    .graphiques {
-        flex-direction: column;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        align-items: end;
-        gap: 75px;
-    }
-
-    .graphiques_bg {
-        width: 450px;
-        margin: 14px 0;
-    }
-
     span {
         display: block;
         width: auto;
-        max-width: 700px;
+        max-width: 600px;
         margin: 10px 0;
         margin-bottom: 27px;
     }
 
-    .miseEnPage--grid, .miseEnPageCase--grid {
+    .miseEnPageCaseData--grid, .miseEnPage__donnees--grid, .miseEnPageEtapes--grid {
         display: grid;
-        grid-template-columns: 0.85fr 1.15fr;
-    }
-
-    .miseEnPage__avant-propos--grid {
-        display: grid;
-        grid-template-columns: 55% 45%;
+        grid-template-columns: repeat(2, 1fr);
     }
     
-    .miseEnPageCase--grid img {
+    .miseEnPageCaseData--grid div {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         margin-left: 120px;
         justify-self: end;
         margin: 0;
+        margin-right: 12px;
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    .miseEnPageCase--grid p {
+    .miseEnPageCaseData--grid img {
+        width: 70%;
+        justify-self: end;
+    }
+
+    .miseEnPageCaseData--grid p {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
         align-self: center;
         max-width: 700px;
         margin-right: 120px;
         margin: 0;
-    }
-
-    .miseEnPage--grid h2, .miseEnPage--grid h3 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        margin-left: 120px;
-        justify-self: end;
-        margin: 0 0 30px;
-    }
-
-    .miseEnPage--grid img {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        justify-self: end;
-        margin: 10px 0 27px;
-    }
-
-    .miseEnPage--grid p {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        max-width: 700px;
-        margin-left: 23px;
-    }
-
-    .miseEnPage--grid div {
-        display: inline-block;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    .miseEnPageConcept--grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .miseEnPageConcept--grid h3 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        margin: 0 12px 30px;
-        justify-self: start;
-        margin-left: 40%;
-    }
-
-    .miseEnPageConcept--grid p {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        max-width: 500px;
-        margin: 0 12px;
-        justify-self: start;
-        margin-left: 40%;
-    }
-
-    .miseEnPageConcept--grid img {
-        max-width: 280px;
-    }
-
-    .miseEnPageConcept--grid div {
-        display: inline-block;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        justify-self: start;
         margin-left: 12px;
     }
 
-    .miseEnPageConception--grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding-top: 100px;
-    }
-
-    .miseEnPageConception--grid img {
-        max-width: 250px;
-        margin-top: 100px;
-    }
-
-    .img--gauche {
+    .miseEnPageCaseData--grid h2 {
         grid-column: 1 / 2;
-        grid-row: 1 / 3;
-        margin-right: 30px;
-        width: fit-content;
-        justify-self: end;
-    }
-
-    .img--droite {
-        grid-column: 3 / 4;
-        grid-row: 1 / 3;
-        margin-left: 30px;
-        width: fit-content;
-        justify-self: start;
-    }
-
-    .img--droite img, .img--gauche img {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        margin: 10px 0 27px;
-    }
-
-    .miseEnPageConception--grid h3 {
-        grid-column: 2 / 3;
         grid-row: 1 / 2;
-        width: fit-content;
-        justify-self: center;
-        margin: 0;
-    }
-
-    .miseEnPageConception--grid p {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        width: 100%;
-        margin: 0 0 30px;
+        justify-self: end;
+        margin: 50px 12px 30px 0;
     }
 
     .heaj{
         width: 100px;
     }
 
-    .miseEnPage__avant-propos--grid h2 {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        justify-self: start;
-        margin: 80px 60px 0;
-    }
-
-    .miseEnPage__avant-propos--grid p{
+    .miseEnPage__donnees--grid h2 {
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        margin: 0;
-        justify-self: start;
-        margin-right: 23px;
-        background-color: var(--color-bg);
-        position: absolute;
-        z-index: 2;
-        margin-left: 47%;
-        margin-top: 25%;
-        border-radius: 5px;
-        padding: 13px 23px;
-    }
-
-    .miseEnPage__avant-propos--grid img {
-        grid-column: 1 / 2;
-        grid-row: 1 / 3;
-        justify-self: end;
-        width: 70%;
-        margin: 0;
-        margin-right: 23px;
-        position: relative;
-    }
-
-    .miseEnPage__code--grid {
-        display: grid;
-        grid-template-columns: 55% 45%;
-        margin-bottom: 140px;
-    }
-
-    .miseEnPage__code--grid h3 {
-        grid-column: 1 / 2;
         grid-row: 1 / 2;
-        margin: 0 0 30px 20%;
+        justify-self: center;
+        margin: 50px 0 30px 0;
     }
 
-    .miseEnPage__code--grid img {
+    .miseEnPage__donnees--grid img {
         grid-column: 2 / 3;
-        grid-row: 1 / 3;
-        align-self: center;
+        grid-row: 2 / 3;
+        margin-left: 12px;
+        justify-self: start;
     }
 
-    .miseEnPage__code--grid p {
+    .miseEnPage__donnees--grid p {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        margin: 0 23px 0 20%;
+        margin: 0;
+        margin-right: 12px;
+        justify-self: end;
     }
 
+    .miseEnPageEtapes--grid img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
+        margin-left: 12px;
+        justify-self: start;
+    }
+
+    .miseEnPageEtapes--grid h3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-left: 12px;
+    }
+
+    .miseEnPageEtapes--grid ul, .miseEnPageEtapes--grid ol {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .miseEnPageEtapes--grid .p1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .miseEnPageEtapes--grid .p2 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
 }
