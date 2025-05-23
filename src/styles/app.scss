@@ -315,9 +315,29 @@ span {
     margin-right: 23px;
 }
 
-.btt:hover {
+.btt:hover, .retourPortfolio:hover, .nextCS:hover {
     background-color: var(--color-text);
     color: var(--color-bg);
+}
+
+.retourPage {
+    padding: 0 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 23px;
+}
+
+.retourPortfolio, .nextCS {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s;
+    font-family: "Volkhov", serif;
+    cursor: pointer;
 }
 
 .heaj{
@@ -387,6 +407,10 @@ ul, ol {
   
 
 @media (min-width: 1004px){
+    .retourPage {
+        flex-direction: row;
+    }
+
     .h1__cs {
         padding: 23px;
         padding-left: 80px;
