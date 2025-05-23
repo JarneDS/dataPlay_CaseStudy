@@ -1,7 +1,7 @@
 "use strict";
 
 // Récupérer les boutons
-var menuBtn = document.querySelector(".menu_btn");
+var menuBtn = document.querySelector(".menu_btn__cs");
 var rotatableBtn = document.querySelector(".rotatable");
 var retour = document.querySelector(".retour");
 
@@ -11,7 +11,7 @@ retour.addEventListener("click", closeSousMenu);
 
 // Fonction pour toggle le menu principal
 function toggleMenu() {
-  var menu = document.querySelector(".menu");
+  var menu = document.querySelector(".menu__cs");
   menu.classList.toggle("menu--open");
 }
 
@@ -22,7 +22,7 @@ rotatableBtn.addEventListener("click", toggleSousMenu);
 function toggleSousMenu(event) {
   event.stopPropagation(); // Empêcher la propagation de l'événement pour éviter la fermeture du menu principal
   var sousMenu = event.target.nextElementSibling;
-  if (sousMenu && sousMenu.classList.contains('sous_menu')) {
+  if (sousMenu && sousMenu.classList.contains('sous_menu__cs')) {
     sousMenu.classList.toggle('sous_menu--open');
   }
   const rotateElement = event.target.querySelector('.rotate');
@@ -32,7 +32,7 @@ function toggleSousMenu(event) {
 }
 
 // Fermer le menu principal et le sous-menu lorsque l'un des liens 'a' est cliqué
-document.querySelectorAll('.menu a, .sous_menu a').forEach(link => {
+document.querySelectorAll('.menu__cs a, .sous_menu__cs a').forEach(link => {
   link.addEventListener('click', () => {
     closeMenus().then(() => {
       console.log('Menus fermés avec succès');
@@ -47,11 +47,11 @@ function closeMenus() {
   return new Promise((resolve, reject) => {
     try {
       // Fermer le menu principal
-      var menu = document.querySelector(".menu");
+      var menu = document.querySelector(".menu__cs");
       menu.classList.remove("menu--open");
 
       // Fermer le sous-menu
-      var sousMenu = document.querySelector('.sous_menu.sous_menu--open');
+      var sousMenu = document.querySelector('.sous_menu__cs.sous_menu--open');
       if (sousMenu) {
         sousMenu.classList.remove('sous_menu--open');
         const rotateElement = sousMenu.previousElementSibling.querySelector('.rotate');
@@ -68,7 +68,7 @@ function closeMenus() {
 }
 
 function closeSousMenu() {
-  var sousMenu = document.querySelector('.sous_menu.sous_menu--open');
+  var sousMenu = document.querySelector('.sous_menu__cs.sous_menu--open');
   if (retour) {
     sousMenu.classList.remove('sous_menu--open');
     const rotateElement = sousMenu.previousElementSibling.querySelector('.rotate');
@@ -78,9 +78,9 @@ function closeSousMenu() {
   }
 }
 
-document.querySelector('.scroll').addEventListener('click', function() {
+document.querySelector('.scroll__cs').addEventListener('click', function() {
   // Trouver le premier élément <h2>
-  const firstH2 = document.querySelector('h2');
+  const firstH2 = document.querySelector('.h2__cs');
   
   if (firstH2) {
       // Calculer la position de défilement ajustée
